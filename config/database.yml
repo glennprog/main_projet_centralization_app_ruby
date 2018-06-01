@@ -1,0 +1,26 @@
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  adapter: mysql2
+  database: rails_demo_dev
+  username: rails_root
+  password: Getpeace3689
+  host: localhost
+
+test:
+  adapter: mysql2
+  database: rails_demo_tes
+  username: rails_root
+  password: Getpeace3689
+  host: localhost
+
+production:
+  adapter: mysql
+  database: rails_demo_prod
+  username: rails_root
+  password: Getpeace3689
+  host: localhost
