@@ -1,0 +1,435 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+@import "font-awesome";
+@import "materialdesignicons";
+
+$bgDefault: #389986;
+$bgActiveCol: #000000;
+$bgHighlight: #555; // 3a3636 or 555
+$colDefault: #ffffff;
+$colHighlight: #ecdbff;
+$dropDown: false;
+$bgDefaultSub: rgb(187, 185, 185); // 3a3636 or 555
+
+
+//_______________________________ gm-floating
+.gm-float-right{
+    float:right;
+}
+
+.gm-float-left{
+    float:left;
+}
+
+//_______________________________ gm-topnav
+.gm-topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $bgDefault;
+    height: 70px;
+}
+
+.gm-topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 23px 19px; //padding: 14px 16px;
+	text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.gm-topnav a:hover {
+	background-color: $bgHighlight;
+    color: $colDefault;
+}
+
+.gm-topnav-active{
+    background-color: $bgActiveCol;
+	color: white;
+}
+
+//_______________________________ gm-topnav-sub
+.gm-topnav-sub {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $bgDefaultSub;
+}
+.gm-topnav-sub span{
+    list-style-type: none;
+    margin-left: 16px;
+    font-size: 13px;
+}
+
+.gm-topnav-sub-parent{
+    color: #1175c4;
+}
+
+.gm-topnav-sub-child{
+    color: #6e6e6e;
+}
+
+
+
+//_______________________________ gm-home
+
+
+.gm-h1-home{
+    //color: white;
+    font-weight: bold;
+    color: white;
+    //color: gray;
+    //margin-left:12px;
+    margin-bottom: 80px;
+}
+
+.gm-background-home {
+    background: url('/images/background/wallpaper-website-background-website-background-wallpapers-7.jpg');
+    //background: url('/images/background/wallpaper-website-background-background-wallpaper-9.jpg');
+    //background: url('/images/background/free-images-for-websites-HD8.jpg');
+    //background: url('/images/background/spider-19263_960_720.jpg');
+    //background: url('/images/background/pier-407252_960_720.jpg');
+    
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    //opacity:0.75;
+
+    /* Parallel-x
+    background: url('/images/background_001.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 1024px;
+    */
+}
+
+/*
+.gm_canvas_particules{
+    //background: #000;
+    background: rgb(187, 183, 183);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+.inner-heading-canvas{
+    margin-bottom: 100px;
+}
+
+//_______________________________ home-sub-wrapper-incoming-soon-project
+.home-wrapper-waves-center{
+    //margin-bottom: 37px;
+    background-color: rgb(73, 65, 65);
+    //padding-top: 220px;
+    //padding-top: 120px;
+    //padding-bottom: 120px;
+    padding-bottom: 40px;
+}
+
+//________________________
+.container-incomingsoonproject{
+    //background-color: rgb(107, 102, 102);
+    background-color: #131313;//#050505;//white;
+    //background-color: #ababab; //#1d1d1d //#050505
+    padding-right : 12px;
+    padding-left : 12px;
+    //margin-bottom: 37px;
+    border-radius: 7px;
+}
+
+.gm-h3-incomingsoonproject-l1{ 
+    font-size: 13px;
+    color:lightgray;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.gm-h3-incomingsoonproject-l2{
+    font-size: 22px;
+    //color:#787777;
+    color: #d4d4d4;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.gm-p-incomingsoonproject{
+    font-size: 14px;
+    //color:#787777;
+    //color: #ababab; //#1d1d1d //#050505
+    color: #ababab; //#1d1d1d //#050505
+    margin-bottom: 27px;
+}
+
+
+.gm-col-month{
+    font-size: 13px;
+    color:lightgray;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.gm-col-day{
+    font-size: 23px;
+    color:#787777;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.gm-col-dayweek{
+    font-size: 13px;
+    color:lightgray;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.gm-incomingsoonproject-date-margin-left{
+    margin-left:24px;
+}
+
+
+//_______________________________ home-wrapper-hobies-funny-moment
+.home-wrapper-hobies-funny-moment{
+    //background-color: #c6cf3f;
+    background-color: white;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+
+
+
+//_______________________________ home-wrapper-tutorial-news-sharing
+
+.home-wrapper-tutorial-news-sharing{
+    //background-color: #db744c;
+    background-color: white;
+    margin-bottom: 27px;
+}
+
+.container-news-sharing{
+    background-color: white;
+}
+
+.gm-h3-tutonewsharing-l1{ 
+    font-size: 13px;
+    color:lightgray;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.gm-h3-tutonewsharing-l2{
+    font-size: 22px;
+    color:#787777;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.gm-p-tutonewsharing{
+    font-size: 14px;
+    color:#787777;
+    margin-bottom: 27px;
+}
+
+.gm-h2-home-incomingsoonproject{
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 17px;
+}
+
+
+
+//___________________________________
+
+.border-row{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.border-row-bold{
+    border-width: 2px;
+}
+
+.border-col{
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+//_______________________________ gm-withwhat-forwho
+.home-wrapper-withwhat-forwho{
+    //background-color: #dbe4ac;
+    width: auto;
+    margin-bottom: 43px;
+}
+
+.gm-h2-home{
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.gm-home-withwhat-forwho-level-1{
+    height: 430px;
+    border:2px;
+    background-color:white;
+    text-align: center;
+}
+
+
+.gm-home-withwhat-forwho-level-2{
+    height: auto;
+    border:2px;
+    //background-color: #b4b4b4;
+    background-color: white;
+    text-align: center;
+    padding-top: 43px;
+}
+
+.techno-img{
+    border-radius: 8px;
+    width: 133px;
+    margin-left: 27px;
+    margin-bottom: 12px;
+}
+
+.techno-img-round{
+    border-radius: 50%;
+    width: 133px;
+}
+
+//_______________________________ gm-home-footer
+/*
+.home-wrapper-footer{
+    background-color: #87a87f;
+}
+*/
+
+//__
+.gm-home-footer-level-1{
+    height: 80px;
+}
+
+.gm-btn-level-1{
+    padding: 24px;
+    border-radius: 0px;
+    border:0px;
+    background-color: rgba(8, 7, 7, 0.829);//#555;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.gm-btn-level-1:hover{
+    background-color: $bgDefault;
+    border:0px;
+    color: white;
+}
+
+
+//__
+.gm-home-footer-level-2{
+    width: auto;
+    height: auto;
+    background-color: #282828;
+}
+
+.gm-h3-footer-level-2{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:antiquewhite;
+}
+
+.gm-p-footer-level-2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    color:#787777;
+}
+
+.techno-img-minicon{
+    border-radius: 8px;
+    width: 33px;
+    margin-top: 10px;
+}
+
+//__
+/*
+.gm-home-footer-level-3{
+
+    border-top-color: #4b4949;
+    border-style: solid;
+    border-width : 1px;
+
+    width: auto;
+    height: 80px;
+    background-color: #282828;//#555;
+    padding-top: 20px;
+}
+
+.gm-btn-level-3{
+    margin-left: 40px;
+    width: 133px;
+}
+
+.gm-span-footer-level-3{
+    float:right;
+    margin-right: 40px;
+    color:#787777;
+    font-size: 15px;
+}
+*/
+
+.gm-home-footer-level-3{
+
+    border-top-color: #4b4949;
+    border-style: solid;
+    border-width : 1px;
+
+    //width: auto;
+    height: 80px;
+    max-height: 160px;
+    background-color: #282828;//#555;
+    padding-top: 20px;
+}
+
+.gm-btn-level-3{
+    margin-left: 40px;
+    width: 133px;
+    
+}
+
+.gm-span-footer-level-3{
+    float:right;
+    margin-right: 40px;
+    color:#787777;
+    font-size: 15px;
+}
+
+
+//______________ 
+.gm-h2-center-align{
+    text-align: center;
+}
+
+.gm-center-align{
+    text-align: center;
+}
+
+.gm-right-align{
+    text-align: right;
+}

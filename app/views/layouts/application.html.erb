@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsProjects</title>
+    <title><%= yield :current_app_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--<link href="//use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    
+
   </head>
 
   <body>
-    <%= yield %>
+    <div class="gm-wrapper">
+      <div class="gm-header-header-bar">
+        <%= yield :headerbar%>
+      </div>
+      <div class="gm-header-header-side">
+        <%= yield :headerside%>
+      </div>
+      <div class="gm-content-content">
+        <%= yield :content%>
+      </div>
+      <div class="gm-footer-footer">
+        <%= yield :footer%>
+      </div>
+    </div>
   </body>
 </html>
